@@ -19,14 +19,22 @@ class Form extends React.Component {
     handleSubmit(event) {
         alert(this.state.fname + ' ' + this.state.lname + ' loves ' + this.state.fruit);
         event.preventDefault();
-    }
+        
+        console.log(this.state.fname + ' ' + this.state.lname + ' loves ' + this.state.fruit);
+        
+        let response = []
+        // need to populate array
+        for (this.handleSubmit) {
+            response = response+i
+        }
 
-    display500(handleSubmit) {
-        return (
-            <div>
-                Hello
-            </div>
-        )
+        let displayLoop = () => {
+            console.log(this.state.fname + ' ' + this.state.lname + ' displays ' + this.state.fruit)
+            for (i = 0, i < response.length; i++) {
+                this.state.fname + this.state.lname + ' loves ' + this.state.fruit + "<br></br>"
+            }
+        };
+        displayLoop()
     }
   
     render() {
@@ -52,11 +60,15 @@ class Form extends React.Component {
                 <option value="strawberry">Strawberry</option>
                 <option value="banana">Banana</option>
                 <option value="plum">Plum</option>
+                <option value="apricot">Apricot</option>
+                <option value="grapes">Grapes</option>
+                <option value="kiwi">Kiwi</option>
+
             </select><br></br>
           <input type="submit" value="Submit" />
         </form>
         <div>
-            {/* todo */}
+            <h1>Hiiii</h1>
         </div>
         </span>
       );
